@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nursery.iml" filepath="$PROJECT_DIR$/Nursery.iml" group="Nursery" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Nursery/app" />
+      <module fileurl="file://$PROJECT_DIR$/base_common/base_common.iml" filepath="$PROJECT_DIR$/base_common/base_common.iml" group="Nursery/base_common" />
+      <module fileurl="file://$PROJECT_DIR$/base_ui/base_ui.iml" filepath="$PROJECT_DIR$/base_ui/base_ui.iml" group="Nursery/base_ui" />
+      <module fileurl="file://$PROJECT_DIR$/biz_daily/biz_daily.iml" filepath="$PROJECT_DIR$/biz_daily/biz_daily.iml" group="Nursery/biz_daily" />
+      <module fileurl="file://$PROJECT_DIR$/core_annotations/core_annotations.iml" filepath="$PROJECT_DIR$/core_annotations/core_annotations.iml" group="Nursery/core_annotations" />
+      <module fileurl="file://$PROJECT_DIR$/core_processor/core_processor.iml" filepath="$PROJECT_DIR$/core_processor/core_processor.iml" group="Nursery/core_processor" />
+    </modules>
+  </component>
+</project>

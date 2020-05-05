@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <style name="biz_daily_txt_style_1">
+       <item name="android:textSize">16dp</item>
+       <item name="android:gravity">center</item>
+       <item name="android:textColor">@color/base_ui_color_333333</item>
+   </style>
+
+    <style name="biz_daily_txt_style_2">
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/base_ui_color_333333</item>
+    </style>
+
+    <style name="biz_daily_txt_style_3">
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/base_ui_color_999999</item>
+    </style>
+
+</resources>

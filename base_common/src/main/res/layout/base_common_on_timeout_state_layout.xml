@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/base_common_ll_timeout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_timeout"
+            android:src="@drawable/base_common_pic_timeout"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_timeout"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            android:text="服务器开小差啦~"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    
+</RelativeLayout>

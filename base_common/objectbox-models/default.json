@@ -1,0 +1,299 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7693464705852459821",
+      "lastPropertyId": "6:2278667056756761644",
+      "name": "MilkEntity",
+      "properties": [
+        {
+          "id": "1:8502652286618870702",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1773569412021383225",
+          "name": "type",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "3:1564182554965148818",
+          "name": "startTime",
+          "type": 9
+        },
+        {
+          "id": "4:7558163331399025471",
+          "name": "endTime",
+          "type": 9
+        },
+        {
+          "id": "5:5935042627930529555",
+          "name": "capacity",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "6:2278667056756761644",
+          "name": "remark",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:274017471984871349",
+      "lastPropertyId": "5:4027897733897155395",
+      "name": "SleepEntity",
+      "properties": [
+        {
+          "id": "1:8046544418426447906",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:476654240912978511",
+          "name": "type",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "3:1609095245663277474",
+          "name": "startTime",
+          "type": 9
+        },
+        {
+          "id": "4:8547709550456857893",
+          "name": "endTime",
+          "type": 9
+        },
+        {
+          "id": "5:4027897733897155395",
+          "name": "remark",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6262607142310045910",
+      "lastPropertyId": "9:2627146161597585514",
+      "name": "ShitEntity",
+      "properties": [
+        {
+          "id": "1:3537050374171500190",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5849426302786942600",
+          "name": "type",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "3:6264566589654310373",
+          "name": "hasDebris",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "4:2406912814103519751",
+          "name": "hasMucus",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "5:1775408714881373507",
+          "name": "color",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "6:772430514604311015",
+          "name": "smell",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "7:3896297510464574758",
+          "name": "createDate",
+          "type": 9
+        },
+        {
+          "id": "8:7581514561081762936",
+          "name": "remark",
+          "type": 9
+        },
+        {
+          "id": "9:2627146161597585514",
+          "name": "sub",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:8875055834291911032",
+      "lastPropertyId": "5:8073807228196699215",
+      "name": "NurseEntity",
+      "properties": [
+        {
+          "id": "1:3273734833949185524",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2875882225568345226",
+          "name": "type",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "3:3162759751263602601",
+          "name": "startTime",
+          "type": 9
+        },
+        {
+          "id": "4:2021416840278418589",
+          "name": "endTime",
+          "type": 9
+        },
+        {
+          "id": "5:8073807228196699215",
+          "name": "remark",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6463380184238933406",
+      "lastPropertyId": "4:4286356822842707641",
+      "name": "DiapersEntity",
+      "properties": [
+        {
+          "id": "1:3126307609074875536",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:428354351434239468",
+          "name": "brand",
+          "type": 9
+        },
+        {
+          "id": "3:9055999840311640268",
+          "name": "size",
+          "type": 9
+        },
+        {
+          "id": "4:4286356822842707641",
+          "name": "createDate",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:1680707831855004621",
+      "lastPropertyId": "5:5998220061425318314",
+      "name": "AdverseReactionEntity",
+      "properties": [
+        {
+          "id": "1:8874999002480493845",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7108430691866897336",
+          "name": "type",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "3:3051610210047664082",
+          "name": "startTime",
+          "type": 9
+        },
+        {
+          "id": "4:4967409439017866880",
+          "name": "endTime",
+          "type": 9
+        },
+        {
+          "id": "5:5998220061425318314",
+          "name": "remark",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:53063716907868307",
+      "lastPropertyId": "7:7298389397706317640",
+      "name": "PictureEntity",
+      "properties": [
+        {
+          "id": "1:3570958784305772743",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2175949277953200785",
+          "name": "prefix",
+          "type": 9
+        },
+        {
+          "id": "3:1593762141939323337",
+          "name": "bizID",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "4:1251749018784830459",
+          "name": "path",
+          "type": 9
+        },
+        {
+          "id": "5:2257769869331048862",
+          "name": "createDate",
+          "type": 9
+        },
+        {
+          "id": "6:4832709414765990313",
+          "name": "width",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "7:7298389397706317640",
+          "name": "height",
+          "type": 5,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "7:53063716907868307",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

@@ -1,0 +1,80 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.objectbox'
+
+kapt{
+
+    arguments{
+        arg("MODULE_NAME", project.getName())
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        resourcePrefix "base_common_"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "androidx.appcompat:appcompat:${rootProject.ext.appCompatVersion}"
+    api "androidx.core:core-ktx:${rootProject.ext.core_ktx_version}"
+    api "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVersion}"
+    api "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okHttpLoggingInterceptorVersion}"
+    api "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.adapter_rxJava2Version}"
+    api "com.squareup.retrofit2:converter-gson:${rootProject.ext.converter_gsonVersion}"
+    api "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVersion}"
+    api "io.reactivex.rxjava2:rxkotlin:${rootProject.ext.rxKotlinVersion}"
+    api "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxAndroidVersion}"
+    api "com.google.code.gson:gson:${rootProject.ext.gsonVersion}"
+    api "com.alibaba:arouter-api:${rootProject.ext.arouterApiVersion}"
+    kapt "com.alibaba:arouter-compiler:${rootProject.ext.arouterCompilierVersion}"
+    api "com.tencent:mmkv:${rootProject.ext.mmkvVersion}"
+    api "androidx.lifecycle:lifecycle-livedata:${rootProject.ext.liveDataVersion}"
+    api "androidx.multidex:multidex:${rootProject.ext.multidexVersion}"
+    api "com.orhanobut:logger:${rootProject.ext.loggerVersion}"
+
+    //沉浸式状态栏
+    api "com.gyf.immersionbar:immersionbar:${rootProject.ext.immersionBarVersion}"
+
+    //选择器控件
+    api "com.contrarywind:Android-PickerView:${rootProject.ext.pickerViewVersion}"
+
+    //刷新控件
+    api "com.scwang.smartrefresh:SmartRefreshLayout:${rootProject.ext.smartRefreshVersion}"
+
+    //多状态布局
+    api "com.kingja.loadsir:loadsir:${rootProject.ext.loadSirVersion}"
+
+    api project(':core_annotations')
+    kapt project(':core_processor')
+
+    api project(':base_ui')
+}

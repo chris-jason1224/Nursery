@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--****RoundView系列属性 start-->
+    <!-- 以下是重用attr的正确姿势,一切为了在布局中可以自动提示-->
+    <!-- 圆角矩形背景色 -->
+    <attr name="base_ui_rv_backgroundColor" format="color"/>
+    <!-- 圆角矩形背景色press -->
+    <attr name="base_ui_rv_backgroundPressColor" format="color"/>
+    <!-- 圆角弧度,单位dp-->
+    <attr name="base_ui_rv_cornerRadius" format="dimension"/>
+    <!-- 圆角弧度,单位dp-->
+    <attr name="base_ui_rv_strokeWidth" format="dimension"/>
+    <!-- 圆角边框颜色-->
+    <attr name="base_ui_rv_strokeColor" format="color"/>
+    <!-- 圆角边框颜色press -->
+    <attr name="base_ui_rv_strokePressColor" format="color"/>
+    <!-- 文字颜色press-->
+    <attr name="base_ui_rv_textPressColor" format="color"/>
+    <!-- 圆角弧度是高度一半-->
+    <attr name="base_ui_rv_isRadiusHalfHeight" format="boolean"/>
+    <!-- 圆角矩形宽高相等,取较宽高中大值-->
+    <attr name="base_ui_rv_isWidthHeightEqual" format="boolean"/>
+    <!-- 圆角弧度,单位dp,TopLeft-->
+    <attr name="base_ui_rv_cornerRadius_TL" format="dimension"/>
+    <!-- 圆角弧度,单位dp,TopRight-->
+    <attr name="base_ui_rv_cornerRadius_TR" format="dimension"/>
+    <!-- 圆角弧度,单位dp,BottomLeft-->
+    <attr name="base_ui_rv_cornerRadius_BL" format="dimension"/>
+    <!-- 圆角弧度,单位dp,BottomRight-->
+    <attr name="base_ui_rv_cornerRadius_BR" format="dimension"/>
+    <!-- 是否有Ripple效果,api21+有效-->
+    <attr name="base_ui_rv_isRippleEnable" format="boolean"/>
+
+    <!--Android studio自定义的属性名必须和java类的名字一直才能自动提示属性-->
+    <declare-styleable name="base_ui_RoundTextView">
+        <attr name="base_ui_rv_backgroundColor"/>
+        <attr name="base_ui_rv_backgroundPressColor"/>
+        <attr name="base_ui_rv_cornerRadius"/>
+        <attr name="base_ui_rv_strokeWidth"/>
+        <attr name="base_ui_rv_strokeColor"/>
+        <attr name="base_ui_rv_strokePressColor"/>
+        <attr name="base_ui_rv_textPressColor"/>
+        <attr name="base_ui_rv_isRadiusHalfHeight"/>
+        <attr name="base_ui_rv_isWidthHeightEqual"/>
+        <attr name="base_ui_rv_cornerRadius_TL"/>
+        <attr name="base_ui_rv_cornerRadius_TR"/>
+        <attr name="base_ui_rv_cornerRadius_BL"/>
+        <attr name="base_ui_rv_cornerRadius_BR"/>
+        <attr name="base_ui_rv_isRippleEnable"/>
+    </declare-styleable>
+
+    <declare-styleable name="base_ui_RoundLinearLayout">
+        <attr name="base_ui_rv_backgroundColor"/>
+        <attr name="base_ui_rv_backgroundPressColor"/>
+        <attr name="base_ui_rv_cornerRadius"/>
+        <attr name="base_ui_rv_strokeWidth"/>
+        <attr name="base_ui_rv_strokeColor"/>
+        <attr name="base_ui_rv_strokePressColor"/>
+        <attr name="base_ui_rv_isRadiusHalfHeight"/>
+        <attr name="base_ui_rv_isWidthHeightEqual"/>
+        <attr name="base_ui_rv_cornerRadius_TL"/>
+        <attr name="base_ui_rv_cornerRadius_TR"/>
+        <attr name="base_ui_rv_cornerRadius_BL"/>
+        <attr name="base_ui_rv_cornerRadius_BR"/>
+        <attr name="base_ui_rv_isRippleEnable"/>
+    </declare-styleable>
+
+    <declare-styleable name="base_ui_RoundRelativeLayout">
+        <attr name="base_ui_rv_backgroundColor"/>
+        <attr name="base_ui_rv_backgroundPressColor"/>
+        <attr name="base_ui_rv_cornerRadius"/>
+        <attr name="base_ui_rv_strokeWidth"/>
+        <attr name="base_ui_rv_strokeColor"/>
+        <attr name="base_ui_rv_strokePressColor"/>
+        <attr name="base_ui_rv_isRadiusHalfHeight"/>
+        <attr name="base_ui_rv_isWidthHeightEqual"/>
+        <attr name="base_ui_rv_cornerRadius_TL"/>
+        <attr name="base_ui_rv_cornerRadius_TR"/>
+        <attr name="base_ui_rv_cornerRadius_BL"/>
+        <attr name="base_ui_rv_cornerRadius_BR"/>
+        <attr name="base_ui_rv_isRippleEnable"/>
+    </declare-styleable>
+
+    <declare-styleable name="base_ui_RoundFrameLayout">
+        <attr name="base_ui_rv_backgroundColor"/>
+        <attr name="base_ui_rv_backgroundPressColor"/>
+        <attr name="base_ui_rv_cornerRadius"/>
+        <attr name="base_ui_rv_strokeWidth"/>
+        <attr name="base_ui_rv_strokeColor"/>
+        <attr name="base_ui_rv_strokePressColor"/>
+        <attr name="base_ui_rv_isRadiusHalfHeight"/>
+        <attr name="base_ui_rv_isWidthHeightEqual"/>
+        <attr name="base_ui_rv_cornerRadius_TL"/>
+        <attr name="base_ui_rv_cornerRadius_TR"/>
+        <attr name="base_ui_rv_cornerRadius_BL"/>
+        <attr name="base_ui_rv_cornerRadius_BR"/>
+        <attr name="base_ui_rv_isRippleEnable"/>
+    </declare-styleable>
+
+    <!--****RoundView系列属性 end-->
+
+
+    <declare-styleable name="base_ui_CircleImageView">
+        <attr name="base_ui_civ_border_width" format="dimension" />
+        <attr name="base_ui_civ_border_color" format="color" />
+        <attr name="base_ui_civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="base_ui_civ_fill_color" format="color" />
+        <attr name="base_ui_civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="base_ui_clear_editText">
+        <attr name="base_ui_type" format="enum">
+            <enum name="phone" value="0" />
+            <enum name="card" value="1" />
+            <enum name="IDCard" value="2" />
+            <!--隐藏的密码框-->
+            <enum name="Password" value="3"/>
+            <!--可显示的密码框-->
+            <enum name="Visible_Password" value="4"/>
+            <!--针对港澳台-->
+            <enum name="IDCardOther" value="5"/>
+            <!--邮政编码-->
+            <enum name="postcode" value="6"/>
+
+        </attr>
+        <attr name="base_ui_maxLength" format="integer"/>
+        <!--清除图标-->
+        <attr name="base_ui_clearDrawable" format="reference|color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="base_ui_Banner">
+        <attr name="base_ui_delay_time" format="integer" />
+        <attr name="base_ui_scroll_time" format="integer" />
+        <attr name="base_ui_is_auto_play" format="boolean" />
+        <attr name="base_ui_title_background" format="color|reference" />
+        <attr name="base_ui_title_textcolor" format="color" />
+        <attr name="base_ui_title_textsize" format="dimension" />
+        <attr name="base_ui_title_height" format="dimension" />
+        <attr name="base_ui_indicator_width" format="dimension" />
+        <attr name="base_ui_indicator_height" format="dimension" />
+        <attr name="base_ui_indicator_selected_width" format="dimension" />
+        <attr name="base_ui_indicator_selected_height" format="dimension" />
+        <attr name="base_ui_indicator_margin" format="dimension" />
+        <attr name="base_ui_indicator_drawable_selected" format="reference" />
+        <attr name="base_ui_indicator_drawable_unselected" format="reference" />
+        <attr name="base_ui_banner_layout" format="reference"/>
+        <attr name="base_ui_banner_default_image" format="reference"/>
+        <attr name="base_ui_image_scale_type" format="enum">
+            <enum name="center" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+            <enum name="fit_center" value="3" />
+            <enum name="fit_end" value="4" />
+            <enum name="fit_start" value="5" />
+            <enum name="fit_xy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+
+
+</resources>

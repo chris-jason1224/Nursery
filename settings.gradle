@@ -1,0 +1,3 @@
+rootProject.name='Nursery'
+include ':app', ':base_ui', ':core_annotations', ':base_common', ':core_processor'
+include ':biz_daily'

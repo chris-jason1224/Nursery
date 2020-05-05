@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.cj.base_ui.view.roundshape.RoundTextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:base_ui_rv_backgroundColor="@color/base_ui_white"
+        app:base_ui_rv_cornerRadius="8dp"
+        android:id="@+id/rtv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/base_ui_colorPrimary"
+        android:textSize="16dp" />
+
+</LinearLayout>

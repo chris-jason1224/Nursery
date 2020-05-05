@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shit.edit.EditShitRecordActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/base_common_color_fafafa"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/base_common_icon_back_black" />
+
+        <TextView
+            style="@style/biz_daily_txt_style_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="编辑记录" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@color/base_common_color_fafafa"
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="65dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_shit_time_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="粑粑时间"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shit_time"
+                    android:layout_toRightOf="@id/tv_shit_time_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_shit_time"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_shit_type_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="粑粑类型"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shit_type"
+                    android:layout_toRightOf="@id/tv_shit_type_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_shit_type"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:text="干便"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_shit_color_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="粑粑颜色"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shit_color"
+                    android:layout_toRightOf="@id/tv_shit_color_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_shit_color"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:text="金黄色"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_shit_smell_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="粑粑气味"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shit_smell"
+                    android:layout_toRightOf="@id/tv_shit_smell_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_shit_smell"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:text="正常"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_debris_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="有无奶瓣"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_debris"
+                    android:layout_toRightOf="@id/tv_debris_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_debris"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:text="无"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/base_ui_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_mucus_flag"
+                    style="@style/biz_daily_txt_style_1"
+                    android:text="有无粘液"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mucus"
+                    android:layout_toRightOf="@id/tv_mucus_flag"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_mucus"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/biz_daily_full_right_cdcdcd_arrow"
+                        android:layout_alignParentRight="true"
+                        style="@style/biz_daily_txt_style_3"
+                        android:text="无"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <com.cj.base_ui.view.roundshape.RoundTextView
+            android:textSize="14dp"
+            android:id="@+id/rtv_submit"
+            android:textColor="@color/base_ui_white"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            app:base_ui_rv_cornerRadius="8dp"
+            app:base_ui_rv_backgroundColor="#42bd56"
+            android:text="提交保存"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
