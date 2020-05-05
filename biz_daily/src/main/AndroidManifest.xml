@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cj.biz_daily">
+
+    <application>
+        <activity android:name=".diapers.edit.EditDiapersRecordActivity"></activity>
+        <activity android:name=".diapers.DiapersActivity" />
+        <activity android:name=".shit.edit.EditShitRecordActivity" />
+        <activity android:name=".shit.ShitActivity" />
+        <activity android:name=".feed.edit.EditFeedRecordActivity" />
+        <activity android:name=".feed.FeedActivity" />
+        <activity android:name=".index.DailyIndexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
